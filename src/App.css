@@ -1,38 +1,118 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  color: #fff;
+}
+body {
+  background: black;
+}
+/* nav css */
+nav {
+  width: 100%;
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  background: black;
+}
+div#navbarTogglerDemo02 {
+  justify-content: end;
+}
+
+p{
+  font-size: 16px;
+}
+.navbar-brand {
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
+  background: black !important;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: bold;
+  /* border-bottom:  1px solid var(--primary) transparent !important ; */
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid white !important;
+}
+
+.navbar-dark .navbar-brand {
+  color: #fff;
+  font-size: 50px;
+}
+
+/* about */
+#About{
+  color: white;
+  text-align: center;
+  color: darkgray;
+
+}
+.abt-list{
+  color: white  
+  ; text-align: center; 
+  margin-top: 60px;
+}
+/* members css */
+.para{
+  font-size: 12px ;
   text-align: center;
 }
+img.mem-img {
+  width: 100%;
+  max-width: 370px;
+  height: 350px;
+}
+.name-div{
+  padding: 30px 0px;
+}
+.members-text{
+  padding-top: 30px;
+}
+.mem-para{
+  padding: 60px;
+}
+/* Animation css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.animation-div h2 {
+  text-align: center;
+  padding-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+body {
+  background: #000;
+  color: #000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Amusement css */
+
+.amusement-div h2{
+  text-align: center;
+  padding: 30px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Animatronics css */
+.animatronics-div h2{
+  text-align: center;
+  padding: 30px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* footer css */
+.btn-div{
+  text-align: center;
+ 
 }
+
+
+
+.swiper.swiper-initialized.swiper-horizontal.mySwiper2 {
+  width: 60%;
+}
+
+
