@@ -3,6 +3,29 @@
   padding: 0;
   scroll-behavior: smooth;
   color: #fff;
+  font-family: Tahoma;
+}
+body {
+  background: #000;
+  color: #000;
+}
+@font-face {
+  font-family: 'yellowtail';
+  src: url('../public/fonts/Yellowtail-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Tahoma';
+  src: url('../public/fonts/tahoma.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Tahomabold';
+  src: url('../public/fonts/tahomabd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   background: black;
@@ -21,9 +44,9 @@ div#navbarTogglerDemo02 {
   justify-content: end;
 }
 
-p{
+/* p{
   font-size: 16px;
-}
+} */
 .navbar-brand {
   font-weight: bold;
   color: white;
@@ -33,10 +56,14 @@ p{
 
 .nav-link {
   color: white !important;
-  font-weight: bold;
+
   /* border-bottom:  1px solid var(--primary) transparent !important ; */
 }
-
+li.nav-item {
+  margin-left: 30px;
+  letter-spacing: 0px;
+  font-size: 16px;
+}
 .nav-link:hover {
   border-bottom: 1px solid white !important;
 }
@@ -45,6 +72,14 @@ p{
   color: #fff;
   font-size: 50px;
 }
+.navbar-collapse {
+  transition: max-height 0.5s ease; 
+}
+
+.navbar-collapse.show {
+  max-height: 500px; 
+}
+
 
 /* about */
 #About{
@@ -74,21 +109,60 @@ img.mem-img {
 .members-text{
   padding-top: 30px;
 }
-.mem-para{
-  padding: 60px;
+.mem-para {
+  padding: 68px;
+  letter-spacing: 2px;
+  line-height: 22px;
+  font-size: 14px;
 }
+
 /* Animation css */
 
 .animation-div h2 {
   text-align: center;
   padding-bottom: 30px;
 }
-
-
-body {
-  background: #000;
-  color: #000;
+.close-carousel {
+  position: absolute;
+  top: -7px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #000 !important;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1100;
 }
+.MuiBox-root.css-vtxhf1 {
+  background: #454545;
+}
+.carousel-control-prev {
+  left: -46px;
+}
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 11%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0;
+  border: 0;
+  opacity: .5;
+  transition: opacity .15s ease;
+}
+.carousel-control-next {
+  right: -42px;
+}
+
 
 /* Amusement css */
 
@@ -102,6 +176,9 @@ body {
   text-align: center;
   padding: 30px 0px;
 }
+.modal-box.MuiBox-root.css-w082rn {
+  background: #454545;
+}
 
 /* footer css */
 .btn-div{
@@ -109,10 +186,132 @@ body {
  
 }
 
+.hr-lines {
+  position: relative;
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: center;
+}
 
+.hr-lines:before {
+  content: "";
+  height: 2px;
+  width: 169px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
 
-.swiper.swiper-initialized.swiper-horizontal.mySwiper2 {
-  width: 60%;
+.hr-lines:after {
+  content: "";
+  height: 2px;
+  width: 169px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+
+.hr-lines1 {
+  position: relative;
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.hr-lines1:before {
+  content: "";
+  height: 2px;
+  width: 150px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.hr-lines1:after {
+  content: "";
+  height: 2px;
+  width: 150px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.hr-lines {
+  position: relative;
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.hr-lines2:before {
+  content: "";
+  height: 2px;
+  width: 231px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: 12%;
+  left: 0;
+}
+
+.hr-lines2:after {
+  content: "";
+  height: 2px;
+  width: 229px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: 12%;
+  right: 0;
 }
 
 
+@media screen and (max-width: 600px) {
+  .hr-lines:before,
+  .hr-lines:after {
+    display: none;
+  }
+  .hr-lines1:before,
+  .hr-lines1:after {
+    display: none;
+  }
+  .hr-lines2:before,
+  .hr-lines2:after {
+    display: none;
+  }
+}
+
+p.MuiTypography-root.MuiTypography-body2.css-r40f8v-MuiTypography-root {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .MuiBox-root.css-vtxhf1 {
+    background: #454545;
+    width: 93%;
+}
+.carousel-control-next {
+  right: -34px;
+}
+.carousel-control-prev {
+  left: -34px;
+}
+.mem-para {
+  padding: 25px;
+  letter-spacing: 2px;
+  line-height: 21px;
+  font-size: 14px;
+}
+}

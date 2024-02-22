@@ -5,7 +5,7 @@ function ContactForm() {
   return (
   
     <div id="Contact" class="container col-sm-12 col-md-6" >
-        <h2 style={{textAlign:'center',padding:'20px 0px'}}>Contact Us</h2>
+        <h2 style={{textAlign:'center',padding:'20px 0px',color:'darkgray'}} className='hr-lines2'>Contact Us</h2>
       <form>
         <div class="form-row">
           <div class="form-group col-md-6">
