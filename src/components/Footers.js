@@ -44,7 +44,7 @@ function ContactForm() {
         </div>
         <div className="btn-div">
         <button type="submit" class="btn btn-primary" style={{background:"#4caf50",border:'none',padding:'10px 20px',borderRadius:'4px'}}>
-          Sign in
+        Submit
         </button>
         </div>
        
