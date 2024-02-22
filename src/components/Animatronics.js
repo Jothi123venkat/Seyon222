@@ -8,8 +8,7 @@ import { Modal, Box } from "@mui/material";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
-
-const Animation = () => {
+const Animatronics = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
@@ -47,9 +46,9 @@ const Animation = () => {
   }, [modalOpen]);
 
   return (
-    <div className="animatronics-div" >
+    <div className="animatronics-div" id="Gallery">
       <h2 className="hr-lines1" style={{ color: "darkgray" }}>
-        Animatronics
+      Animatronics
       </h2>
       <Container>
         <OwlCarousel autoplay loop margin={6} nav={false} dots={false}>
@@ -80,18 +79,17 @@ const Animation = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-         <Box
+        <Box
           sx={{
             position: "absolute",
             top: "50%",
             left: "50%",
             transform: "translate(-50%, -50%)",
-            maxWidth: '90vw', 
+            width: 600,
             bgcolor: "background.paper",
             boxShadow: 24,
             p: 4,
           }}
-          className="modal-box"
         >
           <div className="carousel slide" data-ride="carousel">
             <div className="carousel-inner">
@@ -129,4 +127,4 @@ const Animation = () => {
   );
 };
 
-export default Animation;
+export default Animatronics;

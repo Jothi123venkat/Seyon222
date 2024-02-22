@@ -4,7 +4,7 @@ import { Grid, TextField, Button } from "@mui/material";
 function ContactForm() {
   return (
   
-    <div id="Contact" class="container col-sm-12 col-md-6" >
+    <div id="Contact" class="container col-sm-12 col-md-6" style={{paddingTop:"20px"}}>
         <h2 style={{textAlign:'center',padding:'20px 0px',color:'darkgray'}} className='hr-lines2'>Contact Us</h2>
       <form>
         <div class="form-row">
